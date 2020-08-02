@@ -5,7 +5,8 @@ def find_even_values(src)
 
     inner_count = 0
     while inner_count < src[count].length do
-      even_array = even?src[count][inner_count]
+      even_array = src.each { |x| puts x if x.even? }
+
       inner_count += 1
     end
     count += 1
